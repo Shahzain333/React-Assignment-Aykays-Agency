@@ -20,3 +20,8 @@ export default function AnimatedCard({ children, className = '', delay = 0 }) {
     </motion.div>
   );
 }
+
+<nav className='flex items-center justify-center gap-3 bg-red-400 pt-7'>
+      <img width={40} src={LogoUrl} alt='Logo'/>
+      <h1 className='text-2xl font-semibold'>Mybindle</h1>
+    </nav>

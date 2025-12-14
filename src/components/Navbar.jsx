@@ -4,9 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import LogoUrl from '../../public/images/logo.webp'
 
 export default function Navbar() {
-  
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
 
@@ -29,21 +29,22 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700"
+      className="sticky top-0 z-50 bg-primary dark:bg-primary"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-600 rounded-lg" />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
-              SaaSPro
-            </span>
+          <Link to="/" className="flex items-center space-x-2 text-white">
+            <img width={40} src={LogoUrl} alt='Logo'/>
+            <h1 className='text-2xl font-semibold'>Mybindle</h1>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+          
             {navItems.map((item) => (
+              
               <Link
                 key={item.name}
                 to={item.path}
@@ -55,18 +56,12 @@ export default function Navbar() {
               >
                 {item.name}
               </Link>
+
             ))}
           </div>
 
           {/* Right side buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/login"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
-            >
-              Sign In
-            </Link>
-            <button className="btn-primary">Get Started</button>
             <ThemeToggle />
           </div>
 
@@ -106,18 +101,6 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                <Link
-                  to="/login"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block w-full text-center py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
-                >
-                  Sign In
-                </Link>
-                <button className="w-full btn-primary mt-2">
-                  Get Started
-                </button>
-              </div>
             </div>
           </motion.div>
         )}

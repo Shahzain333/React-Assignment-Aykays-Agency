@@ -41,7 +41,7 @@ export default function App() {
           <meta property="og:title" content="Project Name" />
           <meta property="og:description" content="Concise project description." />
         </Helmet>
-        <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors">
+        <div className="min-h-screen bg-white transition-colors">
           <Navbar />
           <AnimatedRoutes />
           <Footer />
