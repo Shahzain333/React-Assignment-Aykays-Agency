@@ -16,7 +16,7 @@ export default function Footer() {
             Join the Fun - Download<br />
             MyBindle Now!
           </h1>
-          <p className='text-lg md:text-xl max-w-full lg:max-w-[30%]'>
+          <p className='text-lg md:text-xl max-w-full lg:max-w-[45%]'>
             Your Social Network, Your Way Download MyBindle Now and Be a Part of a Community That’s Always Evolving!
           </p>
         

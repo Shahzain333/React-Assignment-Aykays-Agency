@@ -14,7 +14,7 @@ export default function CardWrapper({
 
     const baseClasses = `
         ${padding ? 'p-4 md:p-6' : ''}
-        ${shadow ? 'shadow-lg' : ''}
+        ${shadow ? 'shadow-lg shadow-gray-200' : ''}
         ${rounded ? 'rounded-xl' : ''}
         ${border ? 'border border-gray-200' : ''}
         ${hover ? 'hover:shadow-xl hover:-translate-y-1 transition-all duration-300' : ''}
