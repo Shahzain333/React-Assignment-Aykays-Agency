@@ -10,7 +10,7 @@ A modern, fully-responsive social networking platform built with React, Vite, an
 
 ## 🚀 Live Demo
 
-[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)]([https://react-assignment-aykays-agenc.vercel.app/](https://react-assignment-aykays-agency-2d1g.vercel.app/))
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://react-assignment-aykays-agency-2d1g.vercel.app/)
 
 **Live URL:** https://react-assignment-aykays-agenc.vercel.app/
 
