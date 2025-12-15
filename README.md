@@ -1,4 +1,3 @@
-
 # My Bindle Platform - React Conversion
 
 ![MyBindle Banner](https://img.shields.io/badge/React-18.2.0-blue)
@@ -10,9 +9,9 @@ A modern, fully-responsive social networking platform built with React, Vite, an
 
 ## 🚀 Live Demo
 
-[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://react-assignment-aykays-agency-2d1g.vercel.app/)
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://react-assignment-aykays-agenc.vercel.app/)
 
-**Live URL:** https://react-assignment-aykays-agenc.vercel.app/
+**Live URL:** [https://react-assignment-aykays-agenc.vercel.app/](https://react-assignment-aykays-agency-2d1g.vercel.app/)
 
 ## ✨ Features
 
@@ -110,10 +109,10 @@ mybindle/
 
 1. **Clone the repository**
    ```bash
-<<<<<<< HEAD
-   git clone https://github.com/Shahzain333/React-Assignment-Aykays-Agenc.git
-   cd React-Assignment-Aykays-Agenc
-=======
-   git clone https://github.com/yourusername/figma-react-conversion.git
-   cd figma-react-conversion
->>>>>>> a3e23cb5d384ee3643cc19847f7f7a98d4d9cde0
+
+git clone https://github.com/Shahzain333/React-Assignment-Aykays-Agenc.git
+cd React-Assignment-Aykays-Agenc
+
+git clone https://github.com/yourusername/figma-react-conversion.git
+cd figma-react-conversion
+
