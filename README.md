@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # MyBindle - Modern Social Networking Platform
+=======
+# My Bindle Platform - React Conversion
+>>>>>>> a3e23cb5d384ee3643cc19847f7f7a98d4d9cde0
 
 ![MyBindle Banner](https://img.shields.io/badge/React-18.2.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-orange)
@@ -109,5 +113,10 @@ mybindle/
 
 1. **Clone the repository**
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/Shahzain333/React-Assignment-Aykays-Agenc.git
    cd React-Assignment-Aykays-Agenc
+=======
+   git clone https://github.com/yourusername/figma-react-conversion.git
+   cd figma-react-conversion
+>>>>>>> a3e23cb5d384ee3643cc19847f7f7a98d4d9cde0
