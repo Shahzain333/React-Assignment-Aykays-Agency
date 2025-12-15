@@ -36,7 +36,7 @@ export default function Donation() {
           {/* First Image - Positioned at bottom left */}
           <div className='absolute bottom-0 right-40 sm:right-65 lg:right-110 z-10'>
             <ImageWrapper 
-              src="/images/Iphone14ProD1.webp"
+              src="/images/IPhone14ProD1.webp"
               alt="Donate decoration 1"
               className='w-[140px] md:w-[240px] lg:w-[400px]'
             />
@@ -45,7 +45,7 @@ export default function Donation() {
           {/* Second Image - Positioned at bottom right */}
           <div className='absolute bottom-0 right-6 sm:right-7 lg:right-15'>
             <ImageWrapper 
-              src="/images/Iphone14ProD2.webp"
+              src="/images/IPhone14ProD2.webp"
               alt="Donate decoration 2"
               className='w-[130px] md:w-[200px] lg:w-[360px]'
             />
