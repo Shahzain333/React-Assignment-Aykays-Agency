@@ -1,8 +1,8 @@
 import React from 'react';
 import { Apple } from 'lucide-react';
 import ImageWrapper from './ImageWrapper';
-import DonateImage1 from '/images/Iphone 14 Pro D1.webp';
-import DonateImage2 from '/images/Iphone 14 Pro D2.webp';
+import DonateImage1 from '/images/Iphone14ProD1.webp';
+import DonateImage2 from '/images/Iphone14ProD2.webp';
 
 export default function Donation() {
   return (
