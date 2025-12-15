@@ -27,10 +27,10 @@ export default function AppInstallSection() {
         
         {/* Header Section */}
         <div className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
             How to Install Our App
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto">
+          <p className="text-lg md:text-xlmax-w-4xl mx-auto dark:text-white text-gray-900">
             Getting started is quick and easy. Follow these simple steps to install and start using MyBindle today.
           </p>
         </div>
@@ -43,18 +43,18 @@ export default function AppInstallSection() {
               {/* Connector line between steps (desktop only) */}
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute top-8 left-3/4 md:w-[80%] h-0.5 
-                bg-gray-300 -z-10"></div>
+                dark:bg-white bg-gray-300 -translate-y-1/2 z-0"></div>
               )}
 
               {/* Step Number */}
-              <div className="text-center text-4xl font-bold mb-6 mt-3 md:relative md:left-2 lg:left-10">
+              <div className="text-center text-4xl font-bold mb-6 mt-3 md:relative md:left-2 lg:left-10 dark:text-white text-gray-900">
                 {step.number}
               </div>
               
-              <CardWrapper hover className="text-center lg:w-[80%] lg:relative lg:left-18">
+              <CardWrapper hover className="text-center lg:w-[80%] lg:relative lg:left-18 dark:text-white text-gray-900">
                 {/* Content */}
                 <h3 className="text-xl md:text-2xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="dark:text-white text-gray-900">{step.description}</p>
               </CardWrapper>
 
             </div>

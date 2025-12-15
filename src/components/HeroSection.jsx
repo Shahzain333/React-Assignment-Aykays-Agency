@@ -6,7 +6,7 @@ import ImageWrapper from './ImageWrapper';
 
 export default function HeroSection() {
   return (
-    <main className="max-h-[885px] md:max-h-[600px] bg-primary color-primary pt-1">
+    <main className="max-h-[885px] md:max-h-[600px] bg-primary dark:bg-gray-900 pt-1">
       
       <section className="container mx-auto py-4">
       
@@ -14,7 +14,7 @@ export default function HeroSection() {
             
           <div className="space-y-2 md:w-1/2 p-2">
 
-            <h1 className="text-4xl sm:text-4xl lg:text-6xl xl:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-4xl lg:text-6xl xl:text-6xl font-bold leading-tight dark:text-white text-gray-900">
               <span className="block">
                 Stay Connected
               </span>
@@ -26,11 +26,13 @@ export default function HeroSection() {
               </span>
             </h1>
             
-            <p className="lg:text-[20.5px] sm:text-xl max-w-2xl">
+            <p className="lg:text-[20.5px] sm:text-xl max-w-2xl dark:text-white text-gray-900">
               A place where friendships grow, communities thrive, and moments turn into unforgettable experiences. Whether you're looking to reconnect with old friends, build new relationships, or share what matters most to you – MyBindle is your home on the internet.
             </p>
 
-            <button className="px-4 py-2 md:px-8 md:py-4 bg-white text-red-400 font-semibold rounded-lg text-lg hover:bg-red-400 hover:text-white transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button
+            aria-label="Get started with MyBindle" 
+            className="px-4 py-2 md:px-8 md:py-4 bg-white text-red-400 font-semibold rounded-lg text-lg hover:bg-red-400 hover:text-white transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
               Get Started
             </button>
             

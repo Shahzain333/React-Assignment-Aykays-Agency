@@ -23,7 +23,8 @@ export default function Donation() {
           </p>
 
           <button className='bg-white text-[#ff5349] rounded-lg px-4 py-3 hover:scale-105 
-            transition-transform cursor-pointer text-sm sm:text-base mt-4 sm:mt-0'>
+            transition-transform cursor-pointer text-sm sm:text-base mt-4 sm:mt-0'
+            aria-label="Make a donation" >
                 Donate Now
           </button>
             

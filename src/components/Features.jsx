@@ -1,5 +1,5 @@
-import React from 'react'
-import CardWrapper from './CardWrapper'
+import React from 'react';
+import CardWrapper from './CardWrapper';
 import { 
   Flame, 
   Camera,  
@@ -19,12 +19,12 @@ function Features() {
     { 
       icon: Camera,
       title: 'Share Your Story', 
-      description: 'Upload photos, videos, and updates to let the world know what’s happening in your life.',
+      description: 'Upload photos, videos, and updates to let the world know what\'s happening in your life.',
     },
     { 
       icon: ChartArea,
       title: 'Real-Time Chat', 
-      description: `Whether it's a DM or a group conversation, connect instantly with smooth, lightning-fast messaging.`,
+      description: 'Whether it\'s a DM or a group conversation, connect instantly with smooth, lightning-fast messaging.',
     },
     { 
       icon: Lock,
@@ -44,25 +44,26 @@ function Features() {
   ];
 
   return (
-    <section className='pt-20'>
+    <section id="features" className='pt-20 px-4'>
         
         <div className='text-center space-y-2 mx-2 sm:mx-5 md:mx-0'>
-            <h1 className='text-[#282722] text-4xl lg:text-5xl'>Features That Keep You Hooked!</h1>
-            <p className='text-[#222222] text-[12px] sm:text-[16px]'>Meet, Chat, Share – Anytime, Anywhere!</p>
+            <h1 className='text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white'>Features That Keep You Hooked!</h1>
+            <p className='text-gray-600 dark:text-gray-300 text-[16px] sm:text-[18px]'>Meet, Chat, Share – Anytime, Anywhere!</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 mx-5 lg:mx-20 pt-10 pb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-7xl pt-10 pb-10">
             {features.map((feature, index) => (
-                <CardWrapper key={feature.title} delay={index} hover className={`text-center`}>
-                    <h3 className="text-lg font-bold mb-2 flex items-center justify-center text-center gap-2"><feature.icon/>{feature.title}</h3>
-                    <p className="text-gray-600 px-5 md:px-10">{feature.description}</p>
+                <CardWrapper key={feature.title} delay={index} hover className="text-center">
+                    <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white flex items-center justify-center gap-2">
+                      <feature.icon className="w-8 h-8 text-primary dark:text-primary" />{feature.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
                 </CardWrapper>
             ))}
         </div>
 
     </section>
-    
   );
 }
 
-export default Features
+export default Features;

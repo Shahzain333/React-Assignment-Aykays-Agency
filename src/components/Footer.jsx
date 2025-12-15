@@ -1,5 +1,5 @@
 import React from 'react';
-import { Apple } from 'lucide-react';
+import { Apple, Play } from 'lucide-react';
 import ImageWrapper from './ImageWrapper';
 import FooterImage1 from '../../public/images/Footer_Img1.webp';
 import FooterImage2 from '../../public/images/Footer_Img2.webp';
@@ -22,7 +22,8 @@ export default function Footer() {
         
           {/* Footer Buttons */}
           <div className='flex flex-col sm:flex-row gap-4 pb-2 sm:items-center sm:justify-center lg:items-start lg:justify-start'>
-            <button className='bg-white text-black rounded-[60px] flex items-center justify-start gap-4 px-6 py-3 hover:scale-105 
+            <button
+            aria-label='Apple Store' className='bg-white text-black rounded-[60px] flex items-center justify-start gap-4 px-6 py-3 hover:scale-105 
             transition-transform cursor-pointer'>
               <Apple size={24} />
               <div className='flex flex-col items-start'>
@@ -31,8 +32,9 @@ export default function Footer() {
               </div>
             </button>
         
-            <button className='bg-white text-black rounded-[60px] flex items-center justify-start gap-4 px-6 py-3 cursor-pointer hover:scale-105 transition-transform'>
-              <Apple size={24} />
+            <button
+             aria-label='Apple Store' className='bg-white text-black rounded-[60px] flex items-center justify-start gap-4 px-6 py-3 cursor-pointer hover:scale-105 transition-transform'>
+              <Play size={24} />
               <div className='flex flex-col items-start'>
                 <p className='text-xs text-gray-500'>GET IT ON</p>
                 <h1 className='text-lg font-semibold'>Play Store</h1>

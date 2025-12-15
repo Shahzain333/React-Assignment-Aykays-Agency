@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { HelmetProvider, Helmet } from 'react-helmet-async';
+import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence, motion } from 'framer-motion';
 import Home from './pages/Home';
-import About from './components/About';
+import About from './pages/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,10 +21,10 @@ function AnimatedRoutes() {
 
 const PageWrapper = ({ children }) => (
   <motion.div
-    initial={{ opacity: 0, y: 8 }}
+    initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -8 }}
-    transition={{ duration: 0.45 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.3 }}
   >
     {children}
   </motion.div>
@@ -35,28 +34,12 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
-        <Helmet>
-          <title>Project Name — concise meta title</title>
-          <meta name="description" content="Concise project description for SEO." />
-          <meta property="og:title" content="Project Name" />
-          <meta property="og:description" content="Concise project description." />
-        </Helmet>
-        <div className="min-h-screen bg-white transition-colors">
+        <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
           <Navbar />
           <AnimatedRoutes />
           <Footer />
         </div>
       </Router>
     </HelmetProvider>
-    // <div>
-    //   <Navbar/>
-    //   <HeroSection/>
-    //   <Features/>
-    //   <About/>
-    //   <HowItWork/>
-    //   <Donation/>
-    //   <Testimonials/>
-    //   <Footer/>
-    // </div>
   );
 }

@@ -9,8 +9,6 @@ const testimonials = [
     text: "This platform changed the way I stay in touch with my friends and family. The interface is smooth, and I love how easy it is to share my moment!",
     name: "Emily R",
     location: "USA",
-    highlight: false,
-    image: ''
   },
   {
     id: 2,
@@ -18,7 +16,6 @@ const testimonials = [
     text: "Running my small business has never been easier! This platform helped me connect with customers, promote my products, and grow my brand!",
     name: "Javier L",
     location: "Spain",
-    highlight: false
   },
   {
     id: 3,
@@ -26,7 +23,6 @@ const testimonials = [
     text: "Finally, a social network that understands what I need! The privacy features are a game-changer, and I feel safer sharing my life online!",
     name: "Amit K",
     location: "India",
-    highlight: false
   },
   {
     id: 4,
@@ -34,7 +30,6 @@ const testimonials = [
     text: "The perfect blend of fun and functionality! Whether I want to go live, discover trending content, or just catch up with friends, everything is right here!",
     name: "Lucas T",
     location: "Brazil",
-    highlight: false
   },
   {
     id: 5,
@@ -42,7 +37,6 @@ const testimonials = [
     text: "I joined just to explore, but now I can't imagine my day without it. The real-time chat and engaging communities make every interaction special!",
     name: "Sophie M",
     location: "UK",
-    highlight: false
   },
   {
     id: 6,
@@ -50,28 +44,27 @@ const testimonials = [
     text: "I've tried many social platforms, but this one truly stands out! The experience feels personal, the connections feel real, and every feature just makes sense!",
     name: "Nora S",
     location: "Canada",
-    highlight: false
   }
 ];
 
 export default function Testimonials() {
   return (
-    <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="testimonials" className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       
       {/* Section Header */}
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           What Our Users Say
         </h2>
       </div>
 
-      {/* Main Content - Grid with 3 columns on large screens */}
+      {/* Testimonials Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {testimonials.map((testimonial) => (
-          <CardWrapper key={testimonial.id} className="p-6 md:p-8 h-full">
+          <CardWrapper key={testimonial.id} hover className="p-6 md:p-8 h-full flex flex-col">
             
-            {/* 5 Star Rating */}
-            <div className="flex mb-4">
+            {/* Rating */}
+            <div className="flex mb-4" aria-label={`${testimonial.rating} out of 5 stars`}>
               {[...Array(5)].map((_, i) => (
                 <Star 
                   key={i} 
@@ -81,21 +74,21 @@ export default function Testimonials() {
             </div>
             
             {/* Testimonial Text */}
-            <p className="text-gray-700 text-base md:text-lg mb-6 md:mb-8">
-              {testimonial.text}
+            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg mb-6 md:mb-8 flex-grow">
+              "{testimonial.text}"
             </p>
             
-            {/* User Details */}
-            <div className="mt-auto flex">
-              <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
-                <User className="w-6 h-6 text-gray-500" />
+            {/* User Info */}
+            <div className="flex items-center mt-auto">
+              <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center mr-4">
+                <User className="w-6 h-6 text-gray-500 dark:text-gray-400" />
               </div>
               <div>
-                <h4 className="font-bold text-gray-900 text-lg md:text-xl">
-                    {testimonial.name}
+                <h4 className="font-bold text-gray-900 dark:text-white text-lg md:text-xl">
+                  {testimonial.name}
                 </h4>
-                <p className="text-gray-500 text-sm md:text-base">
-                    {testimonial.location}
+                <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base">
+                  {testimonial.location}
                 </p>
               </div>
             </div>
@@ -104,10 +97,13 @@ export default function Testimonials() {
       </div>
 
       {/* See More Button */}
-      <div className="text-center mt-4">
-        <button className='bg-white text-[#ff5349] rounded-lg px-10 py-3 hover:scale-105 
-        transition-transform cursor-pointer text-sm sm:text-base font-bold mt-4 sm:mt-0 box-shadow'>
-            See More
+      <div className="text-center mt-12">
+        <button 
+          className='bg-primary dark:bg-primary text-white rounded-lg px-10 py-3 hover:scale-105 
+          transition-transform duration-300 cursor-pointer text-lg font-semibold shadow-lg hover:shadow-xl'
+          aria-label="See more testimonials"
+        >
+          See More
         </button>
       </div>
 
