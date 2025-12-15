@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroImage from '/images/HeroSectionImage.webp';
-import HeroSectionCard1 from '/images/card-1.webp'
-import HeroSectionCard2 from '/images/card.webp'
+// import HeroImage from '../../public/images/HeroSectionImage.webp';
+// import HeroSectionCard1 from '../../public/images/card-1.webp'
+// import HeroSectionCard2 from '../../public/images/card.webp'
 import ImageWrapper from './ImageWrapper';
 
 export default function HeroSection() {
@@ -44,7 +44,7 @@ export default function HeroSection() {
             {/* Card 1 - Positioned top left */}
             <div className='absolute top-7 -left-5 md:top-8 md:-left-12 lg:left-18 z-30'>
               <ImageWrapper
-                src={HeroSectionCard1} 
+                src="/images/card-1.webp" 
                 alt="Hero Image Card 1"
                 className='w-[200px] md:w-[250px]'
               />
@@ -53,7 +53,7 @@ export default function HeroSection() {
             {/* Card 2 - Positioned bottom left */}
             <div className='absolute top-95 left-30 md:top-109 md:left-30 lg:left-65 z-30'>
               <ImageWrapper 
-                src={HeroSectionCard2} 
+                src="/images/card.webp" 
                 alt="Hero Image Card 2"
                 className='w-[200px] md:w-[250px]'
               />
@@ -62,7 +62,7 @@ export default function HeroSection() {
             {/* Main Hero Image */}
             <div className='relative left-3 md:left-0 md:top-auto z-20'>
               <ImageWrapper 
-                src={HeroImage} 
+                src="/images/HeroSectionImage.webp" 
                 alt="Hero Image" 
                 className='w-[300px] sm:w-[320px] md:w-[350px]'
               />

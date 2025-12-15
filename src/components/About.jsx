@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '/images/AboutImage.webp'
+// import AboutImage from '../../public/images/AboutImage.webp'
 import ImageWrapper from './ImageWrapper'
 import CardWrapper from './CardWrapper'
 import {  
@@ -30,7 +30,7 @@ function About() {
     <section className='flex flex-col lg:flex-row items-center justify-center px-2 pb-6 dark:text-white text-gray-900'>
 
         <div className='md:max-w-[600px] lg:w-1/2'>
-            <ImageWrapper src={AboutImage} alt='About Image' />
+            <ImageWrapper src="/images/AboutImage.webp" alt='About Image' />
         </div>
         
         <div className='lg:w-1/2 p-2 sm:p-10 lg:p-0'>

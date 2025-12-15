@@ -1,8 +1,8 @@
 import React from 'react';
 import { Apple, Play } from 'lucide-react';
 import ImageWrapper from './ImageWrapper';
-import FooterImage1 from '/images/Footer_Img1.webp';
-import FooterImage2 from '/images/Footer_Img2.webp';
+// import FooterImage1 from '../../public/images/Footer_Img1.webp';
+// import FooterImage2 from '../../public/images/Footer_Img2.webp';
 
 export default function Footer() {
   return (
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* First Image - Positioned at bottom left */}
           <div className='absolute bottom-0 right-40 sm:right-75 lg:right-75 z-10'>
             <ImageWrapper 
-              src={FooterImage1} 
+              src="/images/Footer_Img1.webp"
               alt="Footer decoration 1"
               className='w-[160px] md:w-[280px] lg:w-[300px]'
             />
@@ -58,7 +58,7 @@ export default function Footer() {
           {/* Second Image - Positioned at bottom right */}
           <div className='absolute bottom-0 -right-1.5 sm:-right-3 lg:-right-6'>
             <ImageWrapper 
-              src={FooterImage2} 
+              src="/images/Footer_Img2.webp"
               alt="Footer decoration 2"
               className='w-[160px] md:w-[280px]'
             />
