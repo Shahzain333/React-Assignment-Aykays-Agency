@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroImage from '../../public/images/HeroSectionImage.webp';
-import HeroSectionCard1 from '../../public/images/card-1.webp'
-import HeroSectionCard2 from '../../public/images/card.webp'
+import HeroImage from '/images/HeroSectionImage.webp';
+import HeroSectionCard1 from '/images/card-1.webp'
+import HeroSectionCard2 from '/images/card.webp'
 import ImageWrapper from './ImageWrapper';
 
 export default function HeroSection() {

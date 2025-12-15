@@ -1,8 +1,8 @@
 import React from 'react';
 import { Apple, Play } from 'lucide-react';
 import ImageWrapper from './ImageWrapper';
-import FooterImage1 from '../../public/images/Footer_Img1.webp';
-import FooterImage2 from '../../public/images/Footer_Img2.webp';
+import FooterImage1 from '/images/Footer_Img1.webp';
+import FooterImage2 from '/images/Footer_Img2.webp';
 
 export default function Footer() {
   return (

@@ -1,49 +1,113 @@
-# Modern SaaS Platform - React Conversion
+# MyBindle - Modern Social Networking Platform
 
-A modern SaaS platform built with React, Vite, Tailwind CSS, and Framer Motion. Converted from Figma design with pixel-perfect accuracy, responsive design, dark mode support, and full accessibility compliance.
+![MyBindle Banner](https://img.shields.io/badge/React-18.2.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-orange)
+![Vite](https://img.shields.io/badge/Vite-5.3.0-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A modern, fully-responsive social networking platform built with React, Vite, and Tailwind CSS. Converted from Figma design with pixel-perfect accuracy.
 
 ## 🚀 Live Demo
 
-[Live Deployment Link](https://your-deployment.example)
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://react-assignment-aykays-agenc.vercel.app/)
 
-## 📁 Project Structure
-figma-react-conversion/
-├── public/ # Static assets
-├── src/
-│ ├── components/ # Reusable components
-│ ├── pages/ # Page components
-│ ├── context/ # React context providers
-│ ├── hooks/ # Custom hooks
-│ ├── utils/ # Utility functions
-│ └── styles/ # Global styles
-├── tests/ # Test files
-├── reports/ # Audit reports
-└── screenshots/ # Design comparisons
+**Live URL:** https://react-assignment-aykays-agenc.vercel.app/
 
 ## ✨ Features
 
-- ⚡ **Built with Vite** - Fast development and production builds
-- 🎨 **Tailwind CSS** - Utility-first styling with dark mode support
-- 🌀 **Framer Motion** - Smooth animations and transitions
-- 📱 **Fully Responsive** - Mobile-first responsive design
-- ♿ **Accessibility** - WCAG AA compliant, ARIA labels, keyboard navigation
-- 🔍 **SEO Optimized** - Meta tags, structured data, semantic HTML
-- 🚀 **Performance** - Lazy loading, code splitting, optimized images
-- 🌙 **Dark Mode** - System preference with manual toggle
+### 🎨 Design & UI
+- **Pixel-perfect** Figma design implementation
+- **Dark/Light mode** with system preference detection
+- **Responsive design** (Mobile → Tablet → Desktop)
+- **Smooth animations** with Framer Motion
+- **Lucide Icons** for consistent UI
 
-## 🛠️ Technologies
+### ⚡ Performance
+- **95+ Lighthouse scores** (Performance, SEO, Accessibility)
+- **Code splitting** with React.lazy()
+- **Image optimization** (WebP + lazy loading)
+- **Optimized bundles** with Vite
+- **Fast page transitions**
 
-- **React 18** - Frontend library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling framework
-- **Framer Motion** - Animation library
-- **React Router** - Client-side routing
+### ♿ Accessibility
+- **WCAG AA compliant** color contrast
+- **ARIA labels** for all interactive elements
+- **Keyboard navigation** support
+- **Screen reader** compatible
+- **Semantic HTML** structure
+
+### 🔍 SEO
+- **Meta tags** with react-helmet-async
+- **JSON-LD structured data**
+- **Open Graph tags** for social sharing
+- **Twitter Cards** support
+- **Sitemap-ready** structure
+
+## 📁 Project Structure
+mybindle/
+├── public/
+│ ├── images/ # Optimized WebP images
+│ └── favicon.ico
+├── src/
+│ ├── components/ # Reusable components
+│ │ ├── Navbar.jsx
+│ │ ├── Footer.jsx
+│ │ ├── ThemeToggle.jsx
+│ │ ├── ImageWrapper.jsx
+│ │ ├── CardWrapper.jsx
+│ │ ├── AnimatedCard.jsx
+│ │ ├── HeroSection.jsx
+│ │ ├── Features.jsx
+│ │ ├── HowItWork.jsx
+│ │ ├── Donation.jsx
+│ │ ├── Testimonials.jsx
+│ │ └── About.jsx
+│ ├── pages/ # Page components
+│ │ ├── Home.jsx
+│ │ └── About.jsx
+│ ├── App.jsx # Main app with routing
+│ └── main.jsx # Entry point
+├── tests/ # Test files
+├── reports/ # Audit reports
+├── screenshots/ # Design comparisons
+├── package.json
+├── vite.config.js
+├── index.css # Tailwind CSS entry
+├── README.md
+├── CHECKLIST.md
+└── Brief-Report.md
+
+## 🛠️ Technology Stack
+
+### Core Framework
+- **React 18** - UI library
+- **Vite 5** - Build tool & dev server
+- **Tailwind CSS 4** - Utility-first CSS
+
+### UI & Animation
+- **Framer Motion** - Smooth animations
 - **Lucide React** - Icon library
-- **React Helmet Async** - SEO management
+- **React Router DOM** - Client-side routing
 
-## 📦 Installation
+### SEO & Performance
+- **React Helmet Async** - Head management
+- **WebP** - Modern image format
+- **Lazy Loading** - Performance optimization
+
+### Development Tools
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **PostCSS** - CSS processing
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/figma-react-conversion.git
-   cd figma-react-conversion
+   git clone https://github.com/Shahzain333/React-Assignment-Aykays-Agenc.git
+   cd React-Assignment-Aykays-Agenc

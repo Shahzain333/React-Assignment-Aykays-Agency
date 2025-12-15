@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../../public/images/About Image.webp'
+import AboutImage from '/images/About Image.webp'
 import ImageWrapper from './ImageWrapper'
 import CardWrapper from './CardWrapper'
 import {  
