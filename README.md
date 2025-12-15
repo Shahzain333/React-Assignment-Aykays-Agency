@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# MyBindle - Modern Social Networking Platform
-=======
+
 # My Bindle Platform - React Conversion
->>>>>>> a3e23cb5d384ee3643cc19847f7f7a98d4d9cde0
 
 ![MyBindle Banner](https://img.shields.io/badge/React-18.2.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-orange)
