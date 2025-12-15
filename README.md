@@ -1,4 +1,4 @@
-# Modern SaaS Platform - React Conversion
+# My Bindle Platform - React Conversion
 
 A modern SaaS platform built with React, Vite, Tailwind CSS, and Framer Motion. Converted from Figma design with pixel-perfect accuracy, responsive design, dark mode support, and full accessibility compliance.
 
